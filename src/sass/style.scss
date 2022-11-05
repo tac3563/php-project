@@ -1,0 +1,41 @@
+@import "/src/sass/config/mixins";
+@import "/src/sass/config/variables";
+@import "/src/sass/config/resets";
+
+
+body {
+    background-color: $primary-blue-base;
+    font-family: 'Inter', sans-serif;
+}
+
+// Header Section:
+
+.home-header {
+
+    color: $white-base;
+    max-width: 1720px;
+    background-image: url(/src/images/home-hero-graphic.png);
+  
+    .nav-bar {
+        display: flex;
+    }
+    
+    .home-hero-section {
+      display: flex;
+
+        .home-hero-left {
+            margin: auto;
+
+            .home-hero-title {
+                font-size: 64px;
+            }
+
+            .home-hero-copy {
+                @include copy-typography;
+            }
+        }
+        
+    }
+
+}
+

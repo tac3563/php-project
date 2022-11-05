@@ -1,0 +1,8 @@
+// Mixins: 
+
+@mixin copy-typography {
+    font-size: $copy-font-size;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+}
